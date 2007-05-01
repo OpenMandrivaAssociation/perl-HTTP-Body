@@ -1,6 +1,6 @@
 %define	module	HTTP-Body
 %define	name	perl-%{module}
-%define version 0.6
+%define version 0.9
 %define release %mkrel 1
 
 Summary:	HTTP Body Parser
