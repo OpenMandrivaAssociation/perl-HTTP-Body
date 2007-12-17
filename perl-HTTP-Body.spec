@@ -13,7 +13,6 @@ Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHANSEN/%{module}-%{version
 Url:		http://search.cpan.org/dist/%{module}
 BuildRequires:	perl-devel
 BuildRequires:  perl-YAML
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildArch:	noarch
 
 %description
