@@ -1,20 +1,19 @@
 %define	module	HTTP-Body
 %define	name	perl-%{module}
-%define version 0.9
+%define version 1.01
 %define release %mkrel 1
 
-Summary:	HTTP Body Parser
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
+Summary:	HTTP Body Parser
 License:	GPL or Artistic
 Group:		Development/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHANSEN/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{module}
-BuildRequires:	perl-devel
+URL:            http://search.cpan.org/dist/%{module}
+Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}.tar.gz
 BuildRequires:  perl-YAML
-BuildRoot:	%{_tmppath}/%{name}-%{version}
-BuildArch:	noarch
+BuildArch:	    noarch
+BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 Perl module to parse HTTP request bodies.
