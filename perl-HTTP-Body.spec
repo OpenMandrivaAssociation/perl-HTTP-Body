@@ -11,7 +11,8 @@ License:	GPL or Artistic
 Group:		Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}.tar.gz
-BuildRequires:  perl-YAML
+BuildRequires:  perl(YAML)
+BuildRequires:  perl(HTTP::Headers)
 BuildArch:	    noarch
 BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
