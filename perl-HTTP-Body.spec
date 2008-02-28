@@ -1,6 +1,6 @@
 %define	module	HTTP-Body
 %define	name	perl-%{module}
-%define version 1.01
+%define version 1.02
 %define release %mkrel 1
 
 Name:		%{name}
@@ -10,7 +10,7 @@ Summary:	HTTP Body Parser
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}.tar.gz
+Source:         http://www.cpan.org/modules/by-module/HTTP/%{module}-%{version}.tar.gz
 BuildRequires:  perl(YAML)
 BuildRequires:  perl(HTTP::Headers)
 BuildArch:	    noarch
