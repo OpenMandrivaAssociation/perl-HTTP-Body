@@ -1,6 +1,6 @@
 %define	module	HTTP-Body
 %define	name	perl-%{module}
-%define version 1.03
+%define version 1.04
 %define release %mkrel 1
 
 Name:		%{name}
