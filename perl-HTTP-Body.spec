@@ -1,26 +1,26 @@
-%define	module	HTTP-Body
-%define	name	perl-%{module}
-%define version 1.05
-%define release %mkrel 1
+%define	upstream_name	 HTTP-Body
+%define upstream_version 1.05
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	HTTP Body Parser
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/HTTP/%{module}-%{version}.tar.gz
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:  perl(YAML)
 BuildRequires:  perl(HTTP::Headers)
 BuildArch:	    noarch
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
+BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl module to parse HTTP request bodies.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -42,4 +42,3 @@ Perl module to parse HTTP request bodies.
 %{perl_vendorlib}/HTTP/Body/*
 %{perl_vendorlib}/HTTP/Body.pm
 %{_mandir}/man3/*
-
