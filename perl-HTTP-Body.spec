@@ -11,8 +11,10 @@ Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:  perl(YAML)
 BuildRequires:  perl(HTTP::Headers)
+BuildRequires:  perl(Test::Deep)
+BuildRequires:  perl(YAML)
+
 BuildArch:	    noarch
 BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -27,7 +29,7 @@ Perl module to parse HTTP request bodies.
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 %{__rm} -rf %{buildroot}
