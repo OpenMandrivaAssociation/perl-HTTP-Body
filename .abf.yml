@@ -1,2 +1,4 @@
+removed_sources:
+  HTTP-Body-1.15.tar.gz: c78a19386d8b7edfc219a6092192abdf6214621c
 sources:
-  "HTTP-Body-1.15.tar.gz": c78a19386d8b7edfc219a6092192abdf6214621c
+  HTTP-Body-1.17.tar.gz: d692edff44f2318552d81cef5ea870f982e1f3c2
