@@ -1,15 +1,15 @@
 %define	upstream_name	 HTTP-Body
-%define upstream_version 1.17
+%define upstream_version 1.19
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 1.17
+Version:    %perl_convert_version %{upstream_version}
 Release:    1
 
 Summary:	HTTP Body Parser
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/HTTP/HTTP-Body-1.17.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/HTTP/HTTP-Body-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(HTTP::Headers)
 BuildRequires:  perl(Test::Deep)
@@ -32,7 +32,7 @@ Perl module to parse HTTP request bodies.
 %make test
 
 %install
-%{makeinstall_std}
+%makeinstall_std
 
 %files 
 %doc README Changes
@@ -104,5 +104,6 @@ Perl module to parse HTTP request bodies.
 
 * Sat Dec 03 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.5-1mdk
 - Initial MDV package
+
 
 
