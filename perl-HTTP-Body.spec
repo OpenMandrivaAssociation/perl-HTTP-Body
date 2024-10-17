@@ -8,7 +8,7 @@ Release:    3
 Summary:	HTTP Body Parser
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/HTTP/HTTP-Body-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(HTTP::Headers)
