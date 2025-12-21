@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/HTTP/HTTP-Body-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:  perl(HTTP::Headers)
 BuildRequires:  perl(Test::Deep)
 BuildRequires:  perl(YAML)
