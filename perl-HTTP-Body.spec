@@ -1,15 +1,15 @@
 %define	upstream_name	 HTTP-Body
-%define upstream_version 1.19
+%define upstream_version 1.23
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    1
 
 Summary:	HTTP Body Parser
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/HTTP/HTTP-Body-%{upstream_version}.tar.gz
+Url:        https://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=catagits/HTTP-Body
+Source0:    https://cpan.metacpan.org/authors/id/G/GE/GETTY/HTTP-Body-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:  perl(HTTP::Headers)
