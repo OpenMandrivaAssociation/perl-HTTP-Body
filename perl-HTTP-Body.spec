@@ -1,15 +1,13 @@
 %define	upstream_name	 HTTP-Body
-%define upstream_version 1.23
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    1.23
+Release:    2
 
 Summary:	HTTP Body Parser
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        https://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=catagits/HTTP-Body
-Source0:    https://cpan.metacpan.org/authors/id/G/GE/GETTY/HTTP-Body-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/G/GE/GETTY/HTTP-Body-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:  perl(HTTP::Headers)
@@ -23,7 +21,7 @@ BuildArch:	    noarch
 Perl module to parse HTTP request bodies.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -63,9 +61,7 @@ Perl module to parse HTTP request bodies.
 
 * Mon Aug 03 2009 Jérôme Quelin <jquelin@mandriva.org> 1.50.0-1mdv2010.0
 + Revision: 407778
-- rebuild using %%perl_convert_version
-
-* Tue Dec 02 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.05-1mdv2009.1
+- rebuild using %1.23 Tue Dec 02 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.05-1mdv2009.1
 + Revision: 309307
 - update to new version 1.05
 
